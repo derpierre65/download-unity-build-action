@@ -4,7 +4,7 @@
 ![Issues](https://img.shields.io/github/issues/derpierre65/download-unity-build-action)
 [![Discord](https://img.shields.io/discord/933758189491613707)](https://discord.gg/Zg4VQXZ7MG)
 
-This action send the latest changelog to given webhook url.
+This action download a specific or the latest build from unity cloud service
 
 ## Inputs
 ### `api-key`
