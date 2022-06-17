@@ -1,0 +1,34 @@
+{
+  "name": "download-unity-build-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action/index.js",
+  "scripts": {
+    "build": "ncc build index.js --out action --minify --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derpierre65/download-unity-build-action.git"
+  },
+  "keywords": [
+    "unity",
+    "build",
+    "cloud",
+    "download"
+  ],
+  "author": "derpierre65",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derpierre65/download-unity-build-action/issues"
+  },
+  "homepage": "https://github.com/derpierre65/download-unity-build-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/github": "^5.0.3",
+    "adm-zip": "^0.5.9",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}

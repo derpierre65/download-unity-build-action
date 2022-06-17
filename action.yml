@@ -1,0 +1,40 @@
+name: 'Download Unity Build'
+description: 'Download a given build from Unity Build Cloud service.'
+branding:
+  icon: send
+  color: blue
+inputs:
+  api-key:
+    description: 'Api Key for the unity build cloud service.'
+    required: true
+  organization-id:
+    description: 'Id of the organization'
+    required: true
+  project-id:
+    description: 'Id of the project'
+    required: true
+  build-target:
+    description: 'Build Target'
+    required: true
+  search-platform:
+    description: 'Search for platform'
+    required: false
+  search-label:
+    description: 'Search for specific label, if given a build with this label will searched otherwise the latest build will taken.'
+    required: false
+  download-context:
+    description: "Directory where the build should be downloaded."
+    required: false
+    default: "./build.zip"
+  unzip-context:
+    description: "Unzip the build into a directory."
+    required: false
+    default: "./build"
+  delete-after-unzip:
+    description: "Delete zip after the unzip process."
+    type: boolean
+    required: false
+    default: true
+runs:
+  using: 'node16'
+  main: 'action/index.js'
